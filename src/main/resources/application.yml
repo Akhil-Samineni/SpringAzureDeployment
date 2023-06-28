@@ -1,0 +1,32 @@
+spring:
+  logging:
+    level: DEBUG
+  data:
+    mongodb:
+      uri: mongodb+srv://${mongodb-username}:${mongodb-password}@akhilmongodbcluster.1iwfqix.mongodb.net/AkhilMongoDBDatabase
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources[0]:
+            endpoint: https://akhil-mongodb-vault.vault.azure.net/
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: da427fed-0866-4706-809a-9d39896ddf3d
+        credential:
+          client-id: 211a5c7a-68f8-4adf-9a91-b77d7d7d425f
+          client-secret: End8Q~DVFq2yTFyklBiYmeA6uNabYeH~mGKjraTY
+        app-id-uri: api://211a5c7a-68f8-4adf-9a91-b77d7d7d425f
+        application-type: web_application_and_resource_server
+        authorization-clients:
+          resource-server:
+            authorizationGrantType: client_credentials
+            scopes:
+              - api://211a5c7a-68f8-4adf-9a91-b77d7d7d425f/.default
+          graph:
+            authorizationGrantType: authorization_code
+            scopes:
+              - https://graph.microsoft.com/User.Read
+              - https://graph.microsoft.com/Directory.Read.All
