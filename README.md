@@ -39,6 +39,18 @@ Azure deploy commands
 		
 		we can find IP address of Spring app under networking
 		In mongoDB under SECURITY in network access we need to IP address of spring APP
-
 		
+	
+Useful links:
+	
+https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/configuration-properties-azure-key-vault-secrets
+https://github.com/Azure-Samples/azure-spring-boot-samples/blob/main/keyvault/spring-cloud-azure-starter-keyvault-secrets/secret-client/src/main/java/com/azure/spring/keyvault/secrets/sample/secret/client/SecretClientApplication.java
+https://medium.com/version-1/azure-ad-integration-in-spring-boot-application-81d66ffd4739
+https://spring.io/blog/2021/01/13/the-latest-on-azure-active-directory-integration
+https://blog.jongallant.com/2021/08/azure-identity-101/
+https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/spring-boot-starter-for-azure-active-directory-developer-guide?tabs=SpringCloudAzure4x
+https://techcommunity.microsoft.com/t5/apps-on-azure-blog/java-spring-boot-mongodb-atlas-app-on-azure-app-service/ba-p/3804121
+https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/spring-boot-starter-for-azure-active-directory-developer-guide?tabs=SpringCloudAzure5x#access-a-web-application
+
+	
 
