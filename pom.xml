@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.samiak</groupId>
 	<artifactId>azure</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>azure</name>
 	<description>Spring Boot Azure</description>
 	<properties>
@@ -51,6 +51,18 @@
 			<version>4.8.0</version>
 		</dependency>
 		<!-- key vault end -->
+		<!-- logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<!-- end -->
+		<!-- Spring AOP -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<!--END Spring AOP -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>

@@ -1,16 +1,23 @@
 package com.samiak.azure.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.annotation.RegisteredOAuth2AuthorizedClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.security.Principal;
+
 @RestController
 public class HomeController {
+    private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
     @GetMapping("/hello")
-    public String hello(HttpServletRequest httpServletRequest) {
+    public String hello(HttpServletRequest httpServletRequest, Principal principal) {
+        logger.info("Hello world");
         return "hello";
     }
 
